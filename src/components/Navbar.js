@@ -109,10 +109,13 @@ export default function Navbar(props) {
           </button>
 
           <div
-            className={cn("collapse navbar-collapse justify-content-end pb-xl-0 pb-4", {
-              "bg-black": isScreenSmall,
-              "bg-transparent": !isScreenSmall,
-            })}
+            className={cn(
+              "collapse navbar-collapse justify-content-end pb-xl-0 pb-4 px-xl-0 px-4",
+              {
+                "bg-black": isScreenSmall,
+                "bg-transparent": !isScreenSmall,
+              }
+            )}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav me-auto ms-auto mb-2 mb-xl-0 absolute-center">
@@ -147,10 +150,14 @@ export default function Navbar(props) {
                   )} `
                 : "Connect"}
             </button> */}
-            <button className="discord-btn px-4 py-2 font-roboto-mono z-100 mx-xl-0 mx-auto">
+            <a
+              href="https://discord.com/invite/tXG6jHkp9u"
+              target="_blank"
+              className="discord-btn px-4 py-2 font-roboto-mono z-100 mx-xl-0 mx-auto w-auto text-center"
+            >
               <i className="bi bi-discord mr-2"></i>
               <span className="ml-2">join discord</span>
-            </button>
+            </a>
           </div>
         </div>
       </nav>

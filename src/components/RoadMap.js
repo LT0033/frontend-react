@@ -58,7 +58,11 @@ export default function RoadMap() {
     return (
       <React.Fragment key={content.id}>
         <li>
-          <div className="timeline_content">
+          <div
+            className="timeline_content"
+            data-aos="fade-down"
+            data-aos-duration="500"
+          >
             <h4>{content.phase}</h4>
             <p className="font-roboto-mono text-white">{content.desc}</p>
           </div>
@@ -69,16 +73,24 @@ export default function RoadMap() {
 
   return (
     <>
-      <div className="text-center text-light bgGradientCustom">
+      <section id="roadmap" className="text-center text-light bgGradientCustom">
         {/* <x-sign>
           <h1 className="display-3">RoadMap</h1>
         </x-sign> */}
 
         <div className="container">
-          <h1 className="display-3 text-white glitch d-md-block d-none">
+          <h1
+            className="display-3 text-white glitch d-md-block d-none"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             RoadMap
           </h1>
-          <h1 className="h2 text-white glitch d-md-none d-block">
+          <h1
+            className="h2 text-white glitch d-md-none d-block"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             RoadMap
           </h1>
 
@@ -249,7 +261,7 @@ export default function RoadMap() {
             </x-sign>
           </TimelineItem>
         </Timeline> */}
-      </div>
+      </section>
     </>
   );
 }

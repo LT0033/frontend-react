@@ -1,29 +1,147 @@
 import React from "react";
+import FounderCard from "./FounderCard";
 
 import "../css/Founder.css";
 
-export default function Founder() {
-  const cardClass = "col-lg-4 col-md-6 my-3 text-center ";
+export default function Founder({ vidHeight }) {
+  const founders = [
+    {
+      id: 1,
+      img: "the-crazy-greek.png",
+      title: "The Crazy Greek",
+      origin: "Greece",
+      position: "Boss",
+      specialities: "Networking and Staying in Trouble",
+      crimes:
+        "Transnational Drug Trafficking, Labor Racketeering, Bid Rigging, Murder, Breaking and Entering, Driving Under the Influence, Illegal possession of fireworks, Illegal operation of a dirt- bike on a public road.",
+      animatePosition: "fade-left",
+      animateDuration: "600",
+      animateDelay: "200",
+    },
+    {
+      id: 2,
+      img: "diamond-hands.png",
+      title: "Mr. Diamondhands",
+      origin: "Sierra Leone",
+      position: "Consigliere",
+      specialities: "Long Term Growth of all Business Assets and Fitness",
+      crimes:
+        "Racketeering, Money Laundering, Wire Fraud, mbezzlement, and suspected involvement in 23 murders.",
+      animatePosition: "fade-down",
+      animateDuration: "600",
+      animateDelay: "400",
+    },
+    {
+      id: 3,
+      img: "brahtoshi.png",
+      title: "Brahtoshi",
+      origin: "Ireland",
+      position: "Underboss",
+      specialities: "Unsuccessful Car Bombings",
+      crimes:
+        "Loansharking, Murder, Weapons Trafficking, Cigarette Smuggling, Gambling",
+      animatePosition: "fade-right",
+      animateDuration: "600",
+      animateDelay: "600",
+    },
+    {
+      id: 4,
+      img: "el-founder.jpg",
+      title: "El Tiguere",
+      origin: "United States",
+      position: "Soldier",
+      specialities: "Extreme Violence with a flair for Creativity",
+      crimes: "Murder, Extortion, Kidnapping",
+      animatePosition: "fade-left",
+      animateDuration: "600",
+      animateDelay: "200",
+    },
+    {
+      id: 5,
+      img: "01001101.png",
+      title: "01001101",
+      origin: "Unknown",
+      position: "Associate",
+      specialities: "Surveillance, Counter-Surveillance, and Anti-Surveillance",
+      crimes: "Ransomware Attacks and Extortion, IP Theft, Doss Attacks",
+      animatePosition: "fade-right",
+      animateDuration: "600",
+      animateDelay: "400",
+    },
+  ];
 
-  const cardStyle = {
-    borderRadius: 40,
-    width: 320,
-    height: 600,
-  };
+  const renderFounders = founders.map((founder) => {
+    return (
+      <React.Fragment key={founder.id}>
+        <div
+          className="col-xl-4 col-lg-6 col-12 mb-5"
+          data-aos={founder.animatePosition}
+          data-aos-duration={founder.animateDuration}
+          data-aos-delay={founder.animateDelay}
+        >
+          <FounderCard
+            founderTitle={founder.title}
+            founderImg={founder.img}
+            founderOrigin={founder.origin}
+            founderPosition={founder.position}
+            founderSpecs={founder.specialities}
+            founderCrimes={founder.crimes}
+          />
+        </div>
+      </React.Fragment>
+    );
+  });
 
-  const cardImgStyle = {
-    borderRadius: 40,
-    width: 300,
-  };
+  // const cardClass = "col-lg-4 col-md-6 my-3 text-center ";
+
+  // const cardStyle = {
+  //   borderRadius: 40,
+  //   width: 320,
+  //   height: 600,
+  // };
+
+  // const cardImgStyle = {
+  //   borderRadius: 40,
+  //   width: 300,
+  // };
 
   return (
     <>
-      <div className="container my-5 text-center text-light">
-        <x-sign>
-          <h1 className="display-3">Meet the Founders</h1>
-        </x-sign>
+      <section className="mb-5 text-center text-light">
+        <div className="founder-bg py-5">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 text-center">
+                <h1 className="display-3 glitch d-lg-block d-none">
+                  MEET THE FOUNDERS
+                </h1>
+                <h1 className="h2 glitch d-lg-none d-block">
+                  MEET THE FOUNDERS
+                </h1>
+              </div>
+              <div className="col-12 my-5">
+                <iframe
+                  width="100%"
+                  height={`${vidHeight}px`}
+                  src="https://youtu.be/nnu9QIHxsfk"
+                ></iframe>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="row justify-content-around">
+                  {renderFounders}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div className="row py-5 justify-content-around">
+        {/* <x-sign>
+          <h1 className="display-3">Meet the Founders</h1>
+        </x-sign> */}
+
+        {/* <div className="row py-5 justify-content-around">
           <div className={cardClass}>
             <div
               className="py-2 border border-dark text-center cardBackground mx-auto"
@@ -170,9 +288,9 @@ export default function Founder() {
               </div>
             </div>
           </div>
-        </div>
-        <img className="img-fluid" src="img/f/allFounder.jpg" alt="" />
-      </div>
+        </div> */}
+        {/* <img className="img-fluid" src="img/f/allFounder.jpg" alt="" /> */}
+      </section>
     </>
   );
 }

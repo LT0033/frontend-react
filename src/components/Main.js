@@ -5,23 +5,43 @@ import { Link } from "react-router-dom";
 import Founder from "./Founder";
 import RoadMap from "./RoadMap";
 import ShowMoreText from "react-show-more-text";
+import Accordion from "./Accordion";
 
 import "../css/MainBackground.css";
 import "../css/CustomButtons.css";
 
 export default function Main(props) {
-  const [greekVidHeight, setGreekVidHeight] = useState(500);
-  const [ourStoryVidHeight, setOurStoryVidHeight] = useState(500);
+  const [vidHeight, setVidHeight] = useState(500);
 
   const changeVidHeight = () => {
     if (window.innerWidth < 768) {
-      setGreekVidHeight(300);
-      setOurStoryVidHeight(300);
+      setVidHeight(300);
     } else {
-      setGreekVidHeight(500);
-      setOurStoryVidHeight(500);
+      setVidHeight(500);
     }
   };
+
+  const paragraph =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus sint provident vel ab reprehenderit cum soluta, suscipit facere nisi sed earum repellendus fuga debitis, nam molestiae minima voluptates possimus.";
+
+  const data = [
+    {
+      title: "Pricing plans",
+      paragraph,
+    },
+    {
+      title: "How to apply",
+      paragraph,
+    },
+    {
+      title: "Purchasing process",
+      paragraph,
+    },
+    {
+      title: "Usage guides",
+      paragraph,
+    },
+  ];
 
   useEffect(() => {
     changeVidHeight();
@@ -38,7 +58,7 @@ export default function Main(props) {
 
   return (
     <>
-      <section className="text-light bg-holder row align-items-center">
+      <section className="text-light bg-holder row align-items-center position-relative banner">
         {/* <div
           className="bg-holder"
           style={{
@@ -85,14 +105,25 @@ export default function Main(props) {
               </p>
             </div>
             <div className="col-12 row justify-content-center my-5">
-              <button className="discord-btn-2 py-3 px-5">
+              <a
+                href="https://discord.com/invite/tXG6jHkp9u"
+                target="_blank"
+                className="discord-btn-2 py-3 px-5"
+              >
                 <i className="bi bi-discord mr-2"></i>
                 <span className="ml-2">join discord</span>
-              </button>
+              </a>
             </div>
-            <div className="col-12 ordered-masks">
-              <img src="/img/ordered-masks.png" className="img-fluid" />
-            </div>
+          </div>
+        </div>
+        <div className="masks-container">
+          <div className="position-relative">
+            <img src="/img/mask-1.png" className="mask-1" />
+            <img src="/img/mask-2.png" className="mask-2" />
+            <img src="/img/mask-3-founder.png" className="mask-3" />
+            <img src="/img/mask-4.png" className="mask-4" />
+            <img src="/img/mask-5.png" className="mask-5" />
+            <img src="/img/mask-6.png" className="mask-6" />
           </div>
         </div>
       </section>
@@ -129,10 +160,18 @@ export default function Main(props) {
       <section className="container py-5 bg-black">
         <div className="row">
           <div className="col-12 mt-md-5 mt-2 text-center">
-            <h1 className="text-white glitch display-3 d-sm-block d-none">
+            <h1
+              className="text-white glitch display-3 d-sm-block d-none"
+              data-aos="fade-up"
+              data-aos-duration="400"
+            >
               The Crazy Greek Speech
             </h1>
-            <h1 className="text-white glitch h2 d-sm-none d-block">
+            <h1
+              className="text-white glitch h2 d-sm-none d-block"
+              data-aos="fade-up"
+              data-aos-duration="400"
+            >
               The Crazy Greek Speech
             </h1>
           </div>
@@ -140,7 +179,7 @@ export default function Main(props) {
             <video
               src="/videos/the-crazy-greek-speech.mp4"
               controls
-              height={greekVidHeight}
+              height={vidHeight}
               className="col-12"
             ></video>
           </div>
@@ -193,7 +232,7 @@ export default function Main(props) {
         </div>
       </section>
 
-      <section className="container py-5 bg-black">
+      <section id="about-us" className="container py-5 bg-black">
         <div className="row">
           <div className="col-12 text-center">
             <h1 className="text-white display-3 d-lg-block d-none glitch">
@@ -205,8 +244,8 @@ export default function Main(props) {
             <ShowMoreText
               /* Default options */
               lines={3}
-              more="Show more"
-              less="Show less"
+              more="Read more"
+              less="Read less"
               className="about-us-text"
               anchorClass="about-us-anchor"
               expanded={false}
@@ -245,21 +284,21 @@ export default function Main(props) {
               Brahtoshi, El Tiguere, 01001101
             </ShowMoreText>
           </div>
-          <div className="col-12 mt-md-5">
+          <div className="col-12 mt-md-2">
             <iframe
               width="100%"
-              height={`${ourStoryVidHeight}px`}
+              height={`${vidHeight}px`}
               src="https://www.youtube.com/embed/P2rajmx044I"
             ></iframe>
           </div>
         </div>
       </section>
 
-      <section className="container bg-black py-5">
+      {/* <section className="container bg-black py-5">
         <div className="row"></div>
-      </section>
+      </section> */}
 
-      <div className="container text-center text-light mt-5">
+      {/* <div className="container text-center text-light mt-5">
         <x-sign>
           <h1 className="mb-4 display-3">FAQ</h1>
         </x-sign>
@@ -276,9 +315,9 @@ export default function Main(props) {
               </h5>
             </x-sign>
           </a>
-        </div>
+        </div> */}
 
-        {/* <div className="accordion " id="accordionExample">
+      {/* <div className="accordion " id="accordionExample">
           <div className="accordion-item bg-dark">
             <h2 className="accordion-header " id="headingThree">
               <button className="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" >
@@ -332,11 +371,25 @@ export default function Main(props) {
             </div>
           </div>
         </div> */}
-      </div>
+      {/* </div> */}
 
-      <Founder />
+      <Founder vidHeight={vidHeight} />
 
-      <div className="container text-light">
+      <section id="faq" className="py-md-5 container bg-black">
+        <div className="row">
+          <div className="col-12 mb-5">
+            <h1 className="display-3 glitch text-center d-lg-block d-none">
+              FAQ
+            </h1>
+            <h1 className="h2 glitch text-center d-lg-none d-block">FAQ</h1>
+          </div>
+          <div className="col-12">
+            <Accordion data={data} />
+          </div>
+        </div>
+      </section>
+
+      {/* <div className="container text-light">
         <x-sign>
           <h5>
             Each Crypto Criminal has one of seven micro logos. The micro logo
@@ -354,12 +407,12 @@ export default function Main(props) {
             </span>
           </x-sign>
 
-          {/* <h5 className="text-light">1</h5> */}
+          <h5 className="text-light">1</h5>
         </div>
 
         <div className="col-lg-2 col-4 text-center">
           <img className="img-fluid" src="img/b/2.png" alt="" />
-          {/* <h5 className="text-light">2</h5> */}
+          <h5 className="text-light">2</h5>
           <x-sign>
             <span className="badge rounded-pill bg-primary py-2 px-2">
               Boss
@@ -368,7 +421,7 @@ export default function Main(props) {
         </div>
         <div className="col-lg-2 col-4 text-center">
           <img className="img-fluid" src="img/b/3.png" alt="" />
-          {/* <h5 className="text-light">3</h5> */}
+          <h5 className="text-light">3</h5>
           <x-sign>
             <span className="badge rounded-pill bg-primary py-2 px-2">
               Consigliere
@@ -377,7 +430,7 @@ export default function Main(props) {
         </div>
         <div className="col-lg-2 col-4 text-center">
           <img className="img-fluid" src="img/b/4.png" alt="" />
-          {/* <h5 className="text-light">4</h5> */}
+          <h5 className="text-light">4</h5>
           <x-sign>
             <span className="badge rounded-pill bg-primary py-2 px-2">
               Underboss
@@ -386,7 +439,7 @@ export default function Main(props) {
         </div>
         <div className="col-lg-2 col-4 text-center">
           <img className="img-fluid" src="img/b/5.png" alt="" />
-          {/* <h5 className="text-light">5</h5> */}
+          <h5 className="text-light">5</h5>
           <x-sign>
             <span className="badge rounded-pill bg-primary py-2 px-2">
               Captain
@@ -395,7 +448,7 @@ export default function Main(props) {
         </div>
         <div className="col-lg-2 col-4 text-center">
           <img className="img-fluid" src="img/b/6.png" alt="" />
-          {/* <h5 className="text-light">6</h5> */}
+          <h5 className="text-light">6</h5>
           <x-sign>
             <span className="badge rounded-pill bg-primary py-2 px-2">
               Soldier
@@ -404,14 +457,14 @@ export default function Main(props) {
         </div>
         <div className="col-lg-2 col-4 text-center">
           <img className="img-fluid" src="img/b/7.png" alt="" />
-          {/* <h5 className="text-light">7</h5> */}
+          <h5 className="text-light">7</h5>
           <x-sign>
             <span className="badge rounded-pill bg-primary py-2 px-2">
               Associate
             </span>
           </x-sign>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

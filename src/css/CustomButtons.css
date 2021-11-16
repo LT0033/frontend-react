@@ -213,6 +213,7 @@
 }
 
 .discord-btn {
+  text-decoration: none;
   position: relative;
   border: 0;
   outline: none;
@@ -226,8 +227,10 @@
   overflow: hidden;
 }
 
-.discord-btn:hover, .discord-btn-2:hover {
+.discord-btn:hover,
+.discord-btn-2:hover {
   color: #000;
+  text-decoration: none;
 }
 
 .discord-btn::before {
@@ -255,6 +258,7 @@
 }
 
 .discord-btn-2 {
+  text-decoration: none;
   width: auto;
   position: relative;
   border: 0;

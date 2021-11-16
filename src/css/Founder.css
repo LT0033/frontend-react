@@ -35,3 +35,8 @@ p {
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
+
+.founder-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("/img/founders-bg.png") center / cover no-repeat fixed;
+}

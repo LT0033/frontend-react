@@ -17,9 +17,12 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import MintNft from "./components/MintNft";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class App extends Component {
   componentDidMount() {
+    AOS.init();
     this.setState({ loading: false });
   }
 
