@@ -256,6 +256,13 @@ export default function Main(props) {
             </h1>
             <h1 className="text-white h2 d-lg-none d-block glitch">About Us</h1>
           </div>
+          <div className="col-12 mb-md-2 mt-5">
+            <iframe
+              width="100%"
+              height={`${vidHeight}px`}
+              src="https://www.youtube.com/embed/P2rajmx044I"
+            ></iframe>
+          </div>
           <div className="col-12">
             <ShowMoreText
               /* Default options */
@@ -299,13 +306,6 @@ export default function Main(props) {
               <br /> Crypto Criminals: The Crazy Greek, Mr. Diamondhands,
               Brahtoshi, El Tiguere, 01001101
             </ShowMoreText>
-          </div>
-          <div className="col-12 mt-md-2">
-            <iframe
-              width="100%"
-              height={`${vidHeight}px`}
-              src="https://www.youtube.com/embed/P2rajmx044I"
-            ></iframe>
           </div>
         </div>
       </section>
