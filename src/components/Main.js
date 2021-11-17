@@ -197,6 +197,7 @@ export default function Main(props) {
               controls
               height={vidHeight}
               className="col-12"
+              poster="/img/speech-thumbnail.png"
             ></video>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function Navbar(props) {
 
   const setLogo = () => {
     if (window.innerWidth < 1200 || window.pageYOffset > 130) {
-      setLogoHeight(70);
+      setLogoHeight(50);
     } else {
       setLogoHeight(120);
     }
@@ -173,7 +173,7 @@ export default function Navbar(props) {
         )}
       >
         <div className="container-fluid position-relative">
-          <div className="navbar-brand mx-xl-0 position-relative z-100 pl-4">
+          <div className="navbar-brand mx-xl-0 position-relative z-100 pl-2">
             {/* <Link to="/"> */}
             <a href="#">
               <img
@@ -187,7 +187,7 @@ export default function Navbar(props) {
           </div>
 
           <button
-            className="navbar-toggler mr-4"
+            className="navbar-toggler mr-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -240,14 +240,20 @@ export default function Navbar(props) {
                   )} `
                 : "Connect"}
             </button> */}
+            <div className="mr-3 d-xl-block d-none">
+              <button className="mint-btn">Mint Now</button>
+            </div>
             <a
               href="https://discord.com/invite/tXG6jHkp9u"
               target="_blank"
-              className="discord-btn px-4 py-2 font-roboto-mono z-100 mx-xl-0 mx-auto w-auto text-center"
+              className="discord-btn px-4 py-2 font-roboto-mono z-100 mx-xl-0 mx-auto  text-center"
             >
               <i className="bi bi-discord mr-2"></i>
               <span className="ml-2">join discord</span>
             </a>
+          </div>
+          <div className="mr-3 d-xl-none d-flex mint-btn-mob">
+            <button className="mint-btn mx-auto">Mint Now</button>
           </div>
         </div>
       </nav>

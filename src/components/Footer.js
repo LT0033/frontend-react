@@ -44,13 +44,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="col-md-6 col-12">
-          <div className="d-flex justify-content-md-end justify-content-center">
-            <div>
-              <button className="mint-btn">Mint Now</button>
-            </div>
-          </div>
-        </div>
         <div className="col-12 mt-4">
           <p className="text-white font-roboto-mono text-md-left text-center">
             &copy; 2021 Crypto Criminals. All rights Reserved Golden Toupee //

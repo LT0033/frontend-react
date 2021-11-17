@@ -225,6 +225,9 @@
   font-size: 18px;
   transition: all ease-in-out 0.3s;
   overflow: hidden;
+  width: 220px;
+  display: flex;
+  justify-content: center;
 }
 
 .discord-btn:hover,
