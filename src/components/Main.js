@@ -6,6 +6,7 @@ import Founder from "./Founder";
 import RoadMap from "./RoadMap";
 import ShowMoreText from "react-show-more-text";
 import Accordion from "./Accordion";
+import gsap, { Power3 } from "gsap";
 
 import "../css/MainBackground.css";
 import "../css/CustomButtons.css";
@@ -44,8 +45,23 @@ export default function Main(props) {
   ];
 
   useEffect(() => {
-    changeVidHeight();
+    gsap.fromTo(
+      ".mask-1",
+      {
+        y: -200,
+        opacity: 0.3,
+        duration: 1,
+        ease: Power3.easeInOut,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: Power3.easeInOut,
+      }
+    );
 
+    changeVidHeight();
     window.addEventListener("resize", () => {
       changeVidHeight();
     });

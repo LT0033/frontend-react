@@ -41,7 +41,7 @@ const FounderCard = ({
               </p>
             </div>
             <div className="col-12 row">
-              <p className="font-poppins text-white lead font-weight-bold">
+              <div className="font-poppins text-white lead font-weight-bold">
                 Crimes:{" "}
                 <span className="font-roboto-mono font-weight-light">
                   <ShowMoreText
@@ -58,7 +58,7 @@ const FounderCard = ({
                     {founderCrimes}
                   </ShowMoreText>
                 </span>
-              </p>
+              </div>
             </div>
           </div>
         </div>

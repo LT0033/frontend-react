@@ -70,7 +70,7 @@ class App extends Component {
   render() {
     return !this.state.loading ? (
       <div className="" style={{ overflow: "hidden" }}>
-        <HashRouter>
+        <Router>
           <Navbar
             account={this.state.account}
             connectToWeb3={this.connectToWeb3}
@@ -92,7 +92,7 @@ class App extends Component {
             </Route>
           </Switch>
           <Footer />
-        </HashRouter>
+        </Router>
       </div>
     ) : (
       <div
