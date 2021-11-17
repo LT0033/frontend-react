@@ -177,40 +177,40 @@ body {
 
 .mask-1 {
   position: absolute;
-  width: 16%;
+  width: 14%;
   bottom: 0;
-  left: 5%;
+  left: 13%;
 }
 .mask-2 {
   position: absolute;
-  width: 20%;
+  width: 18%;
   bottom: 0;
-  left: 15%;
+  left: 23%;
 }
 .mask-3 {
   position: absolute;
-  width: 25%;
+  width: 22%;
   bottom: 0;
-  left: 25%;
+  left: 33%;
 }
 
 .mask-6 {
   position: absolute;
-  width: 16%;
+  width: 14%;
   bottom: 0;
-  right: 5%;
+  right: 13%;
 }
 .mask-5 {
   position: absolute;
-  width: 20%;
+  width: 18%;
   bottom: 0;
-  right: 15%;
+  right: 23%;
 }
 .mask-4 {
   position: absolute;
-  width: 25%;
+  width: 22%;
   bottom: 0;
-  right: 25%;
+  right: 33%;
 }
 
 .masks-container {
@@ -234,7 +234,7 @@ body {
 }
 
 .mint-btn {
-  background: #007bff;
+  background: #7289d9;
   border: 0;
   outline: none;
   color: white;
@@ -245,10 +245,15 @@ body {
   height: 45px;
   border-radius: 8px;
   transition: all ease-in-out 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
 }
 
 .mint-btn:hover {
   letter-spacing: 4px;
+  color: #000;
 }
 
 .banner-btn {
@@ -257,7 +262,11 @@ body {
 }
 
 .opensea {
-  width: 32px;
+  width: 2.5rem;
+}
+
+.opensea:hover {
+  opacity: .7;
 }
 
 .mint-btn-mob {
@@ -279,5 +288,45 @@ body {
 @media only screen and (max-width: 350px) {
   .mint-btn {
     width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mask-1 {
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    left: 0;
+  }
+  .mask-2 {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    left: 12%;
+  }
+  .mask-3 {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    left: 25%;
+  }
+
+  .mask-6 {
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    right: 0;
+  }
+  .mask-5 {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    right: 12%;
+  }
+  .mask-4 {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    right: 25%;
   }
 }

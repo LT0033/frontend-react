@@ -3,16 +3,16 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="container pt-5 pb-3">
-      <div className="row align-items-center">
-        <div className="col-md-6 col-12 mb-md-0 mb-4">
-          <div className="row justify-content-md-start justify-content-center align-items-center">
+      <div className="row justify-content-center align-items-center">
+        <div className="col-12 mb-md-0 mb-4">
+          <div className="row justify-content-center align-items-center">
             <div className="col-1 mr-4">
               <a
                 href="https://instagram.com/crypto0criminals"
                 target="_blank"
                 className="text-decoration-none text-primary"
               >
-                <i className="bi bi-instagram h3"></i>
+                <i className="bi bi-instagram h1"></i>
               </a>
             </div>
             <div className="col-1 mr-4">
@@ -21,7 +21,7 @@ export default function Footer() {
                 target="_blank"
                 className="text-decoration-none text-primary"
               >
-                <i className="bi bi-twitter h3"></i>
+                <i className="bi bi-twitter h1"></i>
               </a>
             </div>
             <div className="col-1 mr-4">
@@ -30,7 +30,7 @@ export default function Footer() {
                 target="_blank"
                 className="text-decoration-none text-primary"
               >
-                <i className="bi bi-discord h3"></i>
+                <i className="bi bi-discord h1"></i>
               </a>
             </div>
             <div className="col-1 mr-4">
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="col-12 mt-4">
-          <p className="text-white font-roboto-mono text-md-left text-center">
+          <p className="text-white font-roboto-mono text-center">
             &copy; 2021 Crypto Criminals. All rights Reserved Golden Toupee //
             Production LLC.
           </p>

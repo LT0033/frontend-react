@@ -186,6 +186,10 @@ export default function Navbar(props) {
             {/* </Link> */}
           </div>
 
+          <div className="d-xl-none d-flex mr-n4">
+            <button className="mint-btn">Mint Now</button>
+          </div>
+
           <button
             className="navbar-toggler mr-2"
             type="button"
@@ -251,9 +255,6 @@ export default function Navbar(props) {
               <i className="bi bi-discord mr-2"></i>
               <span className="ml-2">join discord</span>
             </a>
-          </div>
-          <div className="mr-3 d-xl-none d-flex mint-btn-mob">
-            <button className="mint-btn mx-auto">Mint Now</button>
           </div>
         </div>
       </nav>
