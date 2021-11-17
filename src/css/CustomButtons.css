@@ -217,7 +217,7 @@
   position: relative;
   border: 0;
   outline: none;
-  background: transparent;
+  background: #7289d9;
   display: flex;
   align-items: center;
   color: #fff;
@@ -231,25 +231,6 @@
 .discord-btn-2:hover {
   color: #000;
   text-decoration: none;
-}
-
-.discord-btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 100%;
-  width: 3%;
-  background: #7289d9;
-  border-radius: 8px;
-  transition: all ease-in-out 0.3s;
-  z-index: -1;
-}
-
-.discord-btn:hover::before {
-  width: 100%;
 }
 
 .discord-btn span,

@@ -28,13 +28,13 @@ export default function RoadMap() {
       id: 1,
       phase: "Phase 1",
       desc:
-        "The sale of 3333 Crypto Criminal NFT’s available at presale for .04 ETH Three NFT owners will win a Playstation 5 and an Apple iPhone 13. One owner will be selected to join the Crypto Criminal founders in our next trailer.",
+        "The sale of 3333 Crypto Criminal NFT’s available at presale for .045 ETH Three NFT owners will win a Playstation 5 and an Apple iPhone 13. One owner will be selected to join the Crypto Criminal founders in our next trailer.",
     },
     {
       id: 2,
       phase: "Phase 2",
       desc:
-        "Remaining Crypto Criminal NFT’s available for sale for .05 ETH.  The sale of the 7778th NFT will result in the giveaway of a Rolex or $20,000 cash.",
+        "Remaining Crypto Criminal NFT’s available for sale for .055 ETH.  The sale of the 7778th NFT will result in the giveaway of a Rolex or $20,000 cash.",
     },
     {
       id: 3,

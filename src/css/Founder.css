@@ -38,5 +38,12 @@ p {
 
 .founder-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url("/img/founders-bg.png") center / cover no-repeat fixed;
+    url("/img/founders-bg.png") center / contain no-repeat fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .founder-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+      url("/img/founders-bg.png") center / cover no-repeat fixed !important;
+  }
 }

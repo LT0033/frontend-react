@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="container pt-5 pb-3">
       <div className="row align-items-center">
         <div className="col-md-6 col-12 mb-md-0 mb-4">
-          <div className="row">
+          <div className="row justify-content-md-start justify-content-center">
             <div className="col-1 mr-4">
               <a
                 href="https://instagram.com/crypto0criminals"
@@ -30,11 +30,15 @@ export default function Footer() {
               </a>
             </div>
             <div className="col-1 mr-4">
-              <a href="#" className="text-decoration-none text-primary">
+              <a
+                href="https://www.tiktok.com/@crypto_criminals"
+                target="_blank"
+                className="text-decoration-none text-primary"
+              >
                 <i className="bi bi-tiktok h3"></i>
               </a>
             </div>
-            <div className="col-1">
+            <div className="col-1 mr-4">
               <a
                 href="https://bit.ly/crypto0crim"
                 target="_blank"
@@ -46,6 +50,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="col-md-6 col-12">
+          <div className="d-flex justify-content-md-end justify-content-center">
+            <div>
+              <button className="mint-btn">Mint</button>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 mt-4">
           <p className="text-white font-roboto-mono text-md-left text-center">
             &copy; 2021 Crypto Criminals. All rights Reserved Golden Toupee //
             Production LLC.

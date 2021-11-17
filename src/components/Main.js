@@ -120,20 +120,20 @@ export default function Main(props) {
                 The Metaverse. No Face No Case.
               </p>
             </div>
-            <div className="col-12 row justify-content-center my-5">
+            <div className="col-12 row justify-content-center my-5 banner-btn">
               <a
                 href="https://discord.com/invite/tXG6jHkp9u"
                 target="_blank"
                 className="discord-btn-2 py-3 px-5"
               >
                 <i className="bi bi-discord mr-2"></i>
-                <span className="ml-2">join discord</span>
+                <span className="ml-2 font-roboto-mono">join discord</span>
               </a>
             </div>
           </div>
         </div>
         <div className="masks-container">
-          <div className="position-relative">
+          <div className="position-relative bg-primary">
             <img src="/img/mask-1.png" className="mask-1" />
             <img src="/img/mask-2.png" className="mask-2" />
             <img src="/img/mask-3-founder.png" className="mask-3" />
@@ -181,14 +181,14 @@ export default function Main(props) {
               data-aos="fade-up"
               data-aos-duration="400"
             >
-              The Crazy Greek Speech
+              A Crypto Criminals Presentation
             </h1>
             <h1
               className="text-white glitch h2 d-sm-none d-block"
               data-aos="fade-up"
               data-aos-duration="400"
             >
-              The Crazy Greek Speech
+              A Crypto Criminals Presentation
             </h1>
           </div>
           <div className="col-12 my-md-5 my-2">

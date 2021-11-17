@@ -232,3 +232,26 @@ body {
     padding-bottom: 3.5rem !important;
   }
 }
+
+.mint-btn {
+  background: #007bff;
+  border: 0;
+  outline: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  width: 200px;
+  height: 52px;
+  border-radius: 8px;
+  transition: all ease-in-out .3s;
+}
+
+.mint-btn:hover {
+  letter-spacing: 4px;
+}
+
+.banner-btn {
+  position: relative;
+  z-index: 40;
+}

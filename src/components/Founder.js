@@ -74,7 +74,7 @@ export default function Founder({ vidHeight }) {
     return (
       <React.Fragment key={founder.id}>
         <div
-          className="col-xl-4 col-lg-6 col-12 mb-5"
+          className="col-xl-4 col-md-6 col-12 mb-5"
           data-aos={founder.animatePosition}
           data-aos-duration={founder.animateDuration}
           data-aos-delay={founder.animateDelay}
@@ -129,7 +129,7 @@ export default function Founder({ vidHeight }) {
             </div>
             <div className="row">
               <div className="col-12">
-                <div className="row justify-content-around">
+                <div className="row justify-content-lg-around">
                   {renderFounders}
                 </div>
               </div>
