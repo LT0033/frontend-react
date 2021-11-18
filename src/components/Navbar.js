@@ -10,7 +10,7 @@ export default function Navbar(props) {
 
   // const [navbarActive, setnavbarActive] = useState(false);
   const [navbarScrolled, setNavbarScrolled] = useState(false);
-  const [logoHeight, setLogoHeight] = useState(120);
+  const [logoHeight, setLogoHeight] = useState(140);
   const [isScreenSmall, setScreenSmall] = useState(false);
 
   const checkNavScroll = () => {
@@ -31,9 +31,9 @@ export default function Navbar(props) {
 
   const setLogo = () => {
     if (window.innerWidth < 1200 || window.pageYOffset > 130) {
-      setLogoHeight(50);
+      setLogoHeight(80);
     } else {
-      setLogoHeight(120);
+      setLogoHeight(140);
     }
   };
 
@@ -174,20 +174,22 @@ export default function Navbar(props) {
       >
         <div className="container-fluid position-relative">
           <div className="navbar-brand mx-xl-0 position-relative z-100 pl-2">
-            {/* <Link to="/"> */}
+            <Link to="/">
             <a href="#">
               <img
                 className="img-fluid transition-all"
-                src="/img/logo2.png"
+                src="/img/logo2.ico"
                 alt=""
                 style={{ height: logoHeight }}
               />
             </a>
-            {/* </Link> */}
+            </Link>
           </div>
 
           <div className="d-xl-none d-flex mr-n4">
-            <button className="mint-btn">Mint Now</button>
+            <Link to="/mint-nft">
+              <button className="mint-btn">Mint Now</button>
+            </Link>
           </div>
 
           <button
@@ -245,7 +247,9 @@ export default function Navbar(props) {
                 : "Connect"}
             </button> */}
             <div className="mr-3 d-xl-block d-none">
-              <button className="mint-btn">Mint Now</button>
+              <Link to="/mint-nft">
+                <button className="mint-btn">Mint Now</button>
+              </Link>
             </div>
             <a
               href="https://discord.com/invite/tXG6jHkp9u"

@@ -120,18 +120,16 @@ export default function Founder({ vidHeight }) {
                 </h1>
               </div>
               <div className="col-12 my-5">
-                <iframe
-                  width="100%"
-                  height={`${vidHeight}px`}
-                  src="https://youtu.be/nnu9QIHxsfk"
-                ></iframe>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
                 <div className="row justify-content-lg-around">
                   {renderFounders}
                 </div>
+              </div>
+              <div className="col-12">
+                <iframe
+                  width="100%"
+                  height={`${vidHeight}px`}
+                  src="https://www.youtube.com/embed/nnu9QIHxsfk"
+                ></iframe>
               </div>
             </div>
           </div>

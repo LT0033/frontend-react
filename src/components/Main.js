@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import Founder from "./Founder";
 import RoadMap from "./RoadMap";
 import ShowMoreText from "react-show-more-text";
 import Accordion from "./Accordion";
-import gsap, { Power3 } from "gsap";
+import gsap from "gsap";
 
 import "../css/MainBackground.css";
 import "../css/CustomButtons.css";
@@ -22,44 +22,73 @@ export default function Main(props) {
     }
   };
 
-  const paragraph =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus sint provident vel ab reprehenderit cum soluta, suscipit facere nisi sed earum repellendus fuga debitis, nam molestiae minima voluptates possimus.";
-
   const data = [
     {
-      title: "Pricing plans",
-      paragraph,
+      title: "How do I purchase a Crypto Criminal?",
+      paragraph:
+        "You have two options!  You can either connect your wallet and mint through our website or you can complete the purchase through opensea.  If you are new to NFT’s opensea.io has tutorials detailing the process.",
     },
     {
-      title: "How to apply",
-      paragraph,
+      title: "How much does a Crypto Criminal cost?",
+      paragraph:
+        "There are two price points.  During pre-sale you can purchase a Crypto Criminal for .045 ETH.  During our public sale they will cost .055 ETH.  Join our discord to be whitelisted!",
     },
     {
-      title: "Purchasing process",
-      paragraph,
+      title: "How many Crypto Criminals can I purchase in one transaction?",
+      paragraph: "You can purchase 15 Crypto Criminals per transaction",
     },
     {
-      title: "Usage guides",
-      paragraph,
+      title: "When will my Crypto Criminal be revealed?",
+      paragraph:
+        "Immediately!  Once you have 10 points you can add a criminal to your crew.  The points have a five day delay in between usage.  However the points from your newly added crew member are available to use right away.",
+    },
+    {
+      title: "",
+      paragraph: "",
+    },
+    {
+      title: "",
+      paragraph: "",
     },
   ];
 
   useEffect(() => {
-    gsap.fromTo(
-      ".mask-1",
-      {
-        y: -200,
-        opacity: 0.3,
-        duration: 1,
-        ease: Power3.easeInOut,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: Power3.easeInOut,
-      }
-    );
+    gsap.from(".mask-1", {
+      x: -400,
+      opacity: 0.1,
+      duration: 2,
+      ease: "ease.out",
+    });
+    gsap.from(".mask-2", {
+      y: -400,
+      opacity: 0.1,
+      duration: 2,
+      ease: "ease.out",
+    });
+    gsap.from(".mask-3", {
+      y: 400,
+      opacity: 0.1,
+      duration: 2,
+      ease: "ease.out",
+    });
+    gsap.from(".mask-4", {
+      y: 400,
+      opacity: 0.1,
+      duration: 2,
+      ease: "ease.out",
+    });
+    gsap.from(".mask-5", {
+      y: -400,
+      opacity: 0.1,
+      duration: 2,
+      ease: "ease.out",
+    });
+    gsap.from(".mask-6", {
+      x: 400,
+      opacity: 0.1,
+      duration: 2,
+      ease: "ease.out",
+    });
 
     changeVidHeight();
     window.addEventListener("resize", () => {
@@ -233,7 +262,7 @@ export default function Main(props) {
       <RoadMap />
 
       <section className="container py-md-5 bg-black">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col-12 text-center">
             <h1 className="display-3 text-white glitch d-lg-block d-none my-5">
               The Point System
@@ -243,8 +272,35 @@ export default function Main(props) {
             </h1>
             <p className="text-white lead font-roboto-mono mb-5">
               Each mask is assigned a value between 1 and 3. Collect 10 points
-              and receive an additional Crypto Criminal NFT.
+              and receive an additional Crypto Criminal NFT. The points are then
+              locked for 5 days before you are able to reuse them.
             </p>
+          </div>
+          <div className="col-lg-8 col-12">
+            <div className="d-md-flex d-none mb-3">
+              <input
+                type="text"
+                className="point-system-input mr-4"
+                placeholder="Add Criminal"
+              />
+              <div className="input-group-append ml-4">
+                <button className="point-system-btn">Add Criminal</button>
+              </div>
+            </div>
+            <div className="d-md-none d-block row mb-3">
+              <div className="col-12 mb-4">
+                <input
+                  type="text"
+                  className="point-system-input col-12"
+                  placeholder="Add Criminal"
+                />
+              </div>
+              <div className="col-12">
+                <div className="input-group-append">
+                  <button className="point-system-btn">Add Criminal</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

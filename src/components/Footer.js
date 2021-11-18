@@ -8,6 +8,15 @@ export default function Footer() {
           <div className="row justify-content-center align-items-center">
             <div className="col-1 mr-4">
               <a
+                href="https://bit.ly/crypto0crim"
+                target="_blank"
+                className="text-decoration-none text-primary"
+              >
+                <i className="bi bi-discord h1"></i>
+              </a>
+            </div>
+            <div className="col-1 mr-4">
+              <a
                 href="https://instagram.com/crypto0criminals"
                 target="_blank"
                 className="text-decoration-none text-primary"
@@ -26,20 +35,20 @@ export default function Footer() {
             </div>
             <div className="col-1 mr-4">
               <a
-                href="https://bit.ly/crypto0crim"
-                target="_blank"
-                className="text-decoration-none text-primary"
-              >
-                <i className="bi bi-discord h1"></i>
-              </a>
-            </div>
-            <div className="col-1 mr-4">
-              <a
                 href="https://www.tiktok.com/@crypto_criminals"
                 target="_blank"
                 className="text-decoration-none text-primary"
               >
-                <img src="/img/opensea.png" className="opensea"/>
+                <i className="bi bi-tiktok h1"></i>
+              </a>
+            </div>
+            <div className="col-1 mr-4">
+              <a
+                href="https://opensea.io/Crypt0Criminals"
+                target="_blank"
+                className="text-decoration-none text-primary"
+              >
+                <img src="/img/opensea.png" className="opensea" />
               </a>
             </div>
           </div>
