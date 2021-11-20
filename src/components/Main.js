@@ -303,7 +303,9 @@ export default function Main(props) {
               </div>
               <div className="col-12">
                 <div className="input-group-append">
-                  <button className="point-system-btn">Add Criminal</button>
+                  <button className="point-system-btn col-12">
+                    Add Criminal
+                  </button>
                 </div>
               </div>
             </div>

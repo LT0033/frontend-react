@@ -51,7 +51,7 @@ export default function Navbar(props) {
       setLogo();
     });
 
-    (function(document, history, location) {
+    (function (document, history, location) {
       var HISTORY_SUPPORT = !!(history && history.pushState);
 
       var anchorScrolls = {
@@ -61,7 +61,7 @@ export default function Navbar(props) {
         /**
          * Establish events, and fix initial scroll position if a hash is provided.
          */
-        init: function() {
+        init: function () {
           this.scrollToCurrent();
           window.addEventListener(
             "hashchange",
@@ -77,7 +77,7 @@ export default function Navbar(props) {
          * Return the offset amount to deduct from the normal scroll position.
          * Modify as appropriate to allow for dynamic calculations
          */
-        getFixedOffset: function() {
+        getFixedOffset: function () {
           return this.OFFSET_HEIGHT_PX;
         },
 
@@ -87,7 +87,7 @@ export default function Navbar(props) {
          * @param  {String} href
          * @return {Boolean} - Was the href an anchor.
          */
-        scrollIfAnchor: function(href, pushToHistory) {
+        scrollIfAnchor: function (href, pushToHistory) {
           var match, rect, anchorOffset;
 
           if (!this.ANCHOR_REGEX.test(href)) {
@@ -114,14 +114,14 @@ export default function Navbar(props) {
         /**
          * Attempt to scroll to the current location's hash.
          */
-        scrollToCurrent: function() {
+        scrollToCurrent: function () {
           this.scrollIfAnchor(window.location.hash);
         },
 
         /**
          * If the click event's target was an anchor, fix the scroll position.
          */
-        delegateAnchors: function(e) {
+        delegateAnchors: function (e) {
           var elem = e.target;
 
           if (
@@ -175,14 +175,14 @@ export default function Navbar(props) {
         <div className="container-fluid position-relative">
           <div className="navbar-brand mx-xl-0 position-relative z-100 pl-2">
             <Link to="/">
-            <a href="#">
-              <img
-                className="img-fluid transition-all"
-                src="/img/logo2.ico"
-                alt=""
-                style={{ height: logoHeight }}
-              />
-            </a>
+              <a href="#">
+                <img
+                  className="img-fluid transition-all"
+                  src="/img/logo2.ico"
+                  alt=""
+                  style={{ height: logoHeight }}
+                />
+              </a>
             </Link>
           </div>
 
@@ -218,13 +218,13 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a
                   className="nav-link font-roboto-mono h5 mt-xl-0 mt-4"
-                  href="#about-us"
+                  href="/#about-us"
                 >
                   ABOUT US
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-roboto-mono h5" href="#roadmap">
+                <a className="nav-link font-roboto-mono h5" href="/#roadmap">
                   ROADMAP
                 </a>
               </li>
@@ -232,7 +232,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a
                   className="nav-link font-roboto-mono h5 mb-xl-0 mb-4"
-                  href="#faq"
+                  href="/#faq"
                 >
                   FAQ
                 </a>
