@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="row justify-content-center align-items-center">
             <div className="col-1 mr-4">
               <a
-                href="https://bit.ly/crypto0crim"
+                href="https://discord.com/invite/tXG6jHkp9u"
                 target="_blank"
                 className="text-decoration-none text-primary"
               >
@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <div className="col-1 mr-4">
               <a
-                href="https://instagram.com/crypto0criminals"
+                href="https://www.instagram.com/crypt0criminals"
                 target="_blank"
                 className="text-decoration-none text-primary"
               >
@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <div className="col-1 mr-4">
               <a
-                href="https://twitter.com/crypto0criminals"
+                href="https://twitter.com/crypt0criminals"
                 target="_blank"
                 className="text-decoration-none text-primary"
               >

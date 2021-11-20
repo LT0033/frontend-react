@@ -15,8 +15,8 @@ export default function Founder({ vidHeight }) {
       crimes:
         "Transnational Drug Trafficking, Labor Racketeering, Bid Rigging, Murder, Breaking and Entering, Driving Under the Influence, Illegal possession of fireworks, Illegal operation of a dirt- bike on a public road.",
       animatePosition: "fade-left",
-      animateDuration: "600",
-      animateDelay: "200",
+      animateDuration: "400",
+      animateDelay: "100",
     },
     {
       id: 2,
@@ -28,8 +28,8 @@ export default function Founder({ vidHeight }) {
       crimes:
         "Racketeering, Money Laundering, Wire Fraud, mbezzlement, and suspected involvement in 23 murders.",
       animatePosition: "fade-down",
-      animateDuration: "600",
-      animateDelay: "400",
+      animateDuration: "400",
+      animateDelay: "200",
     },
     {
       id: 3,
@@ -41,8 +41,8 @@ export default function Founder({ vidHeight }) {
       crimes:
         "Loansharking, Murder, Weapons Trafficking, Cigarette Smuggling, Gambling",
       animatePosition: "fade-right",
-      animateDuration: "600",
-      animateDelay: "600",
+      animateDuration: "400",
+      animateDelay: "300",
     },
     {
       id: 4,
@@ -53,8 +53,8 @@ export default function Founder({ vidHeight }) {
       specialities: "Extreme Violence with a flair for Creativity",
       crimes: "Murder, Extortion, Kidnapping",
       animatePosition: "fade-left",
-      animateDuration: "600",
-      animateDelay: "200",
+      animateDuration: "400",
+      animateDelay: "100",
     },
     {
       id: 5,
@@ -65,8 +65,8 @@ export default function Founder({ vidHeight }) {
       specialities: "Surveillance, Counter-Surveillance, and Anti-Surveillance",
       crimes: "Ransomware Attacks and Extortion, IP Theft, Doss Attacks",
       animatePosition: "fade-right",
-      animateDuration: "600",
-      animateDelay: "400",
+      animateDuration: "400",
+      animateDelay: "200",
     },
   ];
 
@@ -107,7 +107,7 @@ export default function Founder({ vidHeight }) {
 
   return (
     <>
-      <section className="mb-5 text-center text-light">
+      <section className="mb-5 text-center text-light overflow-x-hidden">
         <div className="founder-bg py-5">
           <div className="container">
             <div className="row">

@@ -19,12 +19,13 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url("/img/banner-bg.jpg") center / cover no-repeat fixed;
   height: 100vh;
+  padding: 10rem 0 0 0;
 }
 
 @media only screen and (max-width: 768px) {
   .bg-holder {
     height: 100% !important;
-    padding: 8rem 0 0 0;
+    padding: 7rem 0 0 0;
   }
 }
 

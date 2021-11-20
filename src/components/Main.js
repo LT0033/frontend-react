@@ -40,6 +40,12 @@ export default function Main(props) {
     {
       title: "When will my Crypto Criminal be revealed?",
       paragraph:
+        "Your Crypto Criminals will be revealed 24 hours after presale ends.",
+    },
+    {
+      title:
+        "When can I use the add a criminal to my crew feature, aka the point system?",
+      paragraph:
         "Immediately!  Once you have 10 points you can add a criminal to your crew.  The points have a five day delay in between usage.  However the points from your newly added crew member are available to use right away.",
     },
     {
@@ -103,7 +109,7 @@ export default function Main(props) {
 
   return (
     <>
-      <section className="text-light bg-holder row align-items-center position-relative banner">
+      <section className="text-light bg-holder row position-relative banner">
         {/* <div
           className="bg-holder"
           style={{
@@ -134,7 +140,7 @@ export default function Main(props) {
               </button>{" "}
             </Link>
           </div> */}
-            <div className="col-12 text-center">
+            <div className="col-12 text-center bg-red-500">
               <h1 className="display-1 text-uppercase font-weight-bold glitch mb-3 d-xl-block d-none">
                 crypto criminals
               </h1>
