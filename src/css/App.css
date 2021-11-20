@@ -167,8 +167,8 @@ body {
   margin: 3rem 0;
 }
 
-.card-crime-text {
-}
+/* .card-crime-text {
+} */
 
 .about-us-anchor {
   font-family: "Montserrat", sans-serif;
@@ -266,6 +266,7 @@ body {
 
 .opensea {
   width: 2.5rem;
+  margin-top: 7px;
 }
 
 .opensea:hover {
